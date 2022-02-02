@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bank.signincontroller">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="585.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@onlinebanking.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="username" layoutX="218.0" layoutY="105.0" promptText="username/email" />
+      <PasswordField fx:id="password" layoutX="218.0" layoutY="158.0" promptText="password" />
+      <Label layoutX="152.0" layoutY="49.0" prefHeight="25.0" prefWidth="281.0" text="Sign into your account" textFill="#1e0000">
+         <font>
+            <Font name="Verdana" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="240.0" layoutY="14.0" text="Welcome!" textFill="#1e0000">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="signin" blendMode="MULTIPLY" layoutX="262.0" layoutY="218.0" mnemonicParsing="false" text="sign in" textFill="#001014">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="error" layoutX="205.0" layoutY="192.0" prefHeight="16.0" prefWidth="149.0" textFill="#e80202" />
+      <Button fx:id="admin" blendMode="MULTIPLY" layoutX="21.0" layoutY="19.0" mnemonicParsing="false" onAction="#adminLogin" text="Admin" />
+   </children>
+</Pane>
